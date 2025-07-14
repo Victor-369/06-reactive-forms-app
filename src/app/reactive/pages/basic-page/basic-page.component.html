@@ -75,6 +75,11 @@
         <span>Value</span>
         <pre>{{ myForm.value | json }}</pre>
 
+        <span>Errors</span>
+        <pre>Name: {{ myForm.controls["name"].errors | json }}</pre>
+        <pre>Price: {{ myForm.controls["price"].errors | json }}</pre>
+        <pre>inStorage: {{ myForm.controls["inStorage"].errors | json }}</pre>
+
         <span>Precio</span>
         <!-- Formulacio dinámico: myForm.controls['price'] -->
         <pre>{{ myForm.controls.price.value | json }}</pre>
